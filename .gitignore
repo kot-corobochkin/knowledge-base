@@ -2,20 +2,22 @@
 .DS_Store
 .localized
 
-# Obsidian cache and workspace (часто ломают синхронизацию)
+# Obsidian
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/cache/
+.obsidian/plugins/*/data.json
 
-# В твоём случае (если vault в папке Main)
+# если vault в папке Main
 Main/.obsidian/workspace.json
 Main/.obsidian/workspace-mobile.json
 Main/.obsidian/cache/
 
-# данные плагинов (часто меняются)
-.obsidian/plugins/*/data.json
+# если НЕ хочешь хранить настройки Obsidian полностью
+# (можно включить при необходимости)
+# .obsidian/
 
-# Python (у тебя есть .venv)
+# Python
 .venv/
 __pycache__/
 *.pyc
