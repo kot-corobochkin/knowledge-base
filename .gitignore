@@ -1,11 +1,23 @@
+# macOS
 .DS_Store
-.gitignore
+
+# Node / Quartz
 node_modules
 public
-prof
 tsconfig.tsbuildinfo
-.obsidian
 .quartz-cache
+
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/plugins/*/data.json
+
+# если не хочешь пушить настройки Obsidian
+.obsidian/
+
+# другие служебные
 private/
 .replit
 replit.nix
+prof
