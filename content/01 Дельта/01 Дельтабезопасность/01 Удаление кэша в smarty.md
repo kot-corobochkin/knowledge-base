@@ -1,1 +1,0 @@
-rm -rf smarty/templates_c/*

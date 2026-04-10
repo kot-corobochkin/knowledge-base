@@ -1,4 +1,0 @@
-HTTP_PROXY="http://PPR149QWUXS:J8oFv32HyM8Mgz@193.233.217.3:3082" \  
-HTTPS_PROXY="http://PPR149QWUXS:J8oFv32HyM8Mgz@193.233.217.3:3082" \  
-php composer.phar update
-
