@@ -19,6 +19,8 @@ curl -v https://api.telegram.org
 
 curl -v -x http://PPR149QWUXS:J8oFv32HyM8Mgz@193.233.217.3:3082 https://api.telegram.org
 
+curl -v -x http://PPR149QWUXS:J8oFv32HyM8Mgz@193.233.217.3:3082 https://api.telegram.org
+
 ```
 
 $apiUrl = "https://api.telegram.org/bot{$this->botToken}/sendMessage";
