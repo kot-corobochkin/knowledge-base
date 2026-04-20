@@ -2,26 +2,37 @@
 .DS_Store
 .localized
 
-# Obsidian
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache/
-.obsidian/plugins/*/data.json
+# Node / Quartz
+node_modules
+public
+tsconfig.tsbuildinfo
+.quartz-cache
 
-# если vault в папке Main
+# Obsidian (basic ignore)
+.obsidian/
+
+# Optional: if vault is inside Main
 Main/.obsidian/workspace.json
 Main/.obsidian/workspace-mobile.json
 Main/.obsidian/cache/
-
-# если НЕ хочешь хранить настройки Obsidian полностью
-# (можно включить при необходимости)
-# .obsidian/
 
 # Python
 .venv/
 __pycache__/
 *.pyc
 
-# временные файлы редакторов
+# temp editor files
 *.swp
 *.tmp
+
+# other service files
+private/
+.replit
+replit.nix
+prof
+
+# ignored content folders
+content/08 Война/
+content/01 Спринты/
+content/01 Дельтабезопасность/
+content/01 Дельта/
