@@ -1,0 +1,51 @@
+@startuml algoritm
+
+title Workflow for Handling Names and IDs
+
+start
+
+:Search for "Ivanov";
+:Go to SHN;
+:Navigate to last_id;
+:Get hash_id and sanctions;
+
+if (Need "Nurgaliev"?) then (yes)
+  :Check other last names;
+  :Determine last name;
+  :Retrieve id and last_d;
+else (no)
+  stop
+endif
+
+if (Last name determined?) then (yes)
+  :Add last name;
+  :Append other names;
+else (no)
+  stop
+endif
+
+if (Update needed?) then (yes)
+  :Check if last_id appears > 4 times;
+  :Update record;
+else (no)
+  :Proceed;
+endif
+
+if (New last name?) then (yes)
+  :Retrieve last and second-last names;
+  :Update all necessary records with new last_id;
+else (no)
+  stop
+endif
+
+if (Cannot determine last name?) then (yes)
+  :Sort alphabetically;
+  :Use common_id;
+  :Generate ID array;
+else (no)
+  stop
+endif
+
+stop
+
+@enduml
